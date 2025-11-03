@@ -1,0 +1,61 @@
+/* Container tổng cho chat */
+.chats-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-height: 500px; /* có thể tùy chỉnh */
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Mỗi message */
+.chat-message {
+  display: flex;
+  margin: 5px 0;
+}
+
+/* Tin nhắn của người khác (bên trái) */
+.chat-message.other {
+  justify-content: flex-start;
+}
+
+.chat-message.other .bubble {
+  background-color: #e0e0e0;
+  color: #000;
+  border-radius: 15px 15px 15px 0;
+}
+
+/* Tin nhắn của bản thân (bên phải) */
+.chat-message.self {
+  justify-content: flex-end;
+}
+
+.chat-message.self .bubble {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 15px 15px 0 15px;
+}
+
+/* Hình dạng bubble chung */
+.bubble {
+  padding: 10px 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar tùy chỉnh */
+.chats-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chats-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.chats-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}

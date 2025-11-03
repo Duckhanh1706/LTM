@@ -1,12 +1,13 @@
 # MODULE CLIENT
 
-> 📘 *Sinh viên mô tả phần **client** tại đây. Điền đầy đủ theo framework và bài toán của nhóm.*
+> 📘 _Sinh viên mô tả phần **client** tại đây. Điền đầy đủ theo framework và bài toán của nhóm._
 
 ---
 
 ## 🎯 MỤC TIÊU
 
 Client chịu trách nhiệm:
+
 - Gửi yêu cầu đến server
 - Hiển thị kết quả cho người dùng
 - Cung cấp giao diện tương tác
@@ -15,26 +16,30 @@ Client chịu trách nhiệm:
 
 ## ⚙️ CÔNG NGHỆ SỬ DỤNG
 
-| Thành phần | Công nghệ |
-|------------|-----------|
-| Ngôn ngữ | Node.js / Python / Java / ... |
-| Thư viện chính | Axios / Requests / ... |
-| Giao thức | HTTP / WebSocket / ... |
+| Thành phần     | Công nghệ                     |
+| -------------- | ----------------------------- |
+| Ngôn ngữ       | Node.js / Python / Java / ... |
+| Thư viện chính | Axios / Requests / ...        |
+| Giao thức      | HTTP / WebSocket / ...        |
 
 ---
 
 ## 🚀 HƯỚNG DẪN CHẠY
 
 ### Cài đặt
+
 ```bash
-# Ví dụ với Node.js
-npm install
+
+npm init -y
+
+npm install @apollo/client@4.0.9 graphql@16.7.0 graphql-ws@5.11.0
 
 # Hoặc với Python
 pip install -r requirements.txt
 ```
 
 ### Chạy chương trình
+
 ```bash
 # Ví dụ
 node main.js
@@ -43,12 +48,14 @@ python client.py
 ```
 
 ### Cấu hình (nếu cần)
+
 - Server URL: `http://localhost:8080`
 - Có thể thay đổi trong file `config.js` hoặc `.env`
 
 ---
 
 ## 📦 CẤU TRÚC
+
 ```
 client/
 ├── README.md
@@ -61,6 +68,7 @@ client/
 ---
 
 ## 💡 SỬ DỤNG
+
 ```bash
 # Ví dụ gửi request
 node main.js --input "data"
